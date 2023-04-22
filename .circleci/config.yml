@@ -24,8 +24,9 @@ jobs:
     executor: my-custom-executor
     steps:
       - checkout
-      - run: |
-          # echo Hello, World from Dosuky!
+      - run:
+          name: "Say hello for Dosuky"
+          command: "echo Hello, Dosuky2"
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
